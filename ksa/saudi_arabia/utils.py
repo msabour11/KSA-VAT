@@ -12,9 +12,9 @@ from erpnext import get_region
 
 
 def create_qr_code(doc, method=None):
-	region = get_region(doc.company)
-	if region not in ["Saudi Arabia"]:
-		return
+	# region = get_region(doc.company)
+	# if region not in ["Saudi Arabia"]:
+	# 	return
 
 	# if QR Code field not present, create it. Invoices without QR are invalid as per law.
 	if not hasattr(doc, "ksa_einv_qr"):
