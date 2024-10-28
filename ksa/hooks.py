@@ -105,11 +105,11 @@ after_install = "ksa.saudi_arabia.setup.setup"
 # Hook on document methods and events
 
 doc_events = {
-	"Company": {
-                "on_trash": ["ksa.saudi_arabia.utils.delete_vat_settings_for_company"],
-                "after_insert": ["ksa.saudi_arabia.wizard.operations.setup_tax_templates.setup_templates",
-                              "ksa.saudi_arabia.setup.create_company_settings"]
-        },
+	# "Company": {
+        #         "on_trash": ["ksa.saudi_arabia.utils.delete_vat_settings_for_company"],
+        #         "after_insert": ["ksa.saudi_arabia.wizard.operations.setup_tax_templates.setup_templates",
+        #                       "ksa.saudi_arabia.setup.create_company_settings"]
+        # },
         "Sales Invoice": {
 		"on_submit": [
                         "ksa.saudi_arabia.utils.create_qr_code",
